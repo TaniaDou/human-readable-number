@@ -29,11 +29,11 @@ if (number > 99 && number < 1000) {
             return `${teens[k1]} ${tens[0]} ${teens[[k3 + 10]]}`
         }
         else {
-            return `${a1[k1]} ${a2[0]} ${a2[k2]} ${a1[k3]}`;
+            return `${teens[k1]} ${tens[0]} ${teens[k2]} ${teens[k3]}`;
         };
     };
-    if (k2 == 0 && k3 != 0) { return `${a1[k1]} ${a2[0]} ${a1[k3]}` };
-    if (k2 != 0 && k3 == 0) { return `${a1[k1]} ${a2[0]} ${a2[k2]}` };
-    if (k2 == 0 && k3 == 0) { return `${a1[k1]} ${a2[0]}` };
+    if (k2 == 0 && k3 != 0) { return `${teens[k1]} ${tens[0]} ${teens[k3]}` };
+    if (k2 != 0 && k3 == 0) { return `${teens[k1]} ${tens[0]} ${tens[k2]}` };
+    if (k2 == 0 && k3 == 0) { return `${teens[k1]} ${tens[0]}` };
 }
 }
