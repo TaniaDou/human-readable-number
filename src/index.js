@@ -1,13 +1,9 @@
-let teens = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen',];
-let tens = ['hundred', 'ten', 'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety',];
-
-let decade = Math.floor(number / 10);
-let hundreds = Math.floor(number / 100);
-
-
-
 module.exports = function toReadable (number) {
-
+    let teens = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen',];
+    let tens = ['hundred', 'ten', 'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety',];
+    
+    let decade = Math.floor(number / 10);
+    let hundreds = Math.floor(number / 100);
 // от 0 до 19
 if (number >=0 && number <20) {
     return teens[number]
