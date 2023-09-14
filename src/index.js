@@ -17,11 +17,15 @@ if (number >= 20 && number < 100) {
 
 // от 100 до 999
 if (number > 99 && number < 1000) {
+    if (k2 != 0 && k3 != 0) {
+        if (k2 == 1) {
+            return `${teens[k1]} ${tens[0]} ${teens[[k3 + 10]]}`
+        }
+        else {return `${teens[k1]} ${tens[0]} ${tens[k2]} ${teens[k3]}`}
+    }
     if (k2 == 0 && k3 == 0) {return `${teens[k1]} ${tens[0]}`}
-    if (k2 == 1 && k3 != 0) {return `${teens[k1]} ${tens[0]} ${teens[[k3 + 10]]}`}
-    if (k2 > 1 && k3 != 0)  {return `${teens[k1]} ${tens[0]} ${tens[k2]} ${teens[k3]}`}
-    if (k2 == 1 && k3 == 0)  {return `${teens[k1]} ${tens[0]} ${tens[k2]}`}
-
+    if (k2 == 0 && k3 != 0) {return `${teens[k1]} ${tens[0]} ${teens[k3]}`}
+    if (k2 != 0 && k3 == 0) {return `${teens[k1]} ${tens[0]} ${tens[k2]}`}
 }
 }
 
