@@ -12,8 +12,8 @@ if (number >=0 && number <20) {return teens[number];}
 
  // от 20 до 99
 if (number >= 20 && number < 100) {
-    if (number % 10 !== 0) {return `${tens[decade]} ${teens[number % 10]}`;}}
-    if (number % 10 == 0) {return tens[decade];}
+    if (number % 10 !== 0) {return `${tens[decade]} ${teens[number % 10]}`;}
+    if (number % 10 == 0) {return tens[decade];}}
 
 // от 100 до 999
 if (number > 99 && number < 1000) {
